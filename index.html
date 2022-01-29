@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Девайс</title>
 </head>
 
 <body>
 
-<header class="page-header">
+<header class="site-header">
 
   <nav class="user-navigation">
     <img class="logo" src="img\logo.svg" alt="Логотип Device">
@@ -20,6 +21,7 @@
       </div>
       <input class="user-navigation search-item submit-item" type="submit" value="Найти">
     </form>
+
     <img class="user-navigation sign-in-ico" src="img\account.svg" alt="Войти">
     <a href="#" class="user-navigation sign-in">Войти</a>
     <ul class="user-navigation-list">
@@ -28,9 +30,9 @@
         <a class="user-navigation-link" href="#">Сравнить</a>
       </li>
       <li class="user-navigation-item">
-        <img class="user-navigation-link user-navigation-ico" src="img\cart_count.svg" alt="Кол-во заказов в корзине">
-        <span class="user-navigation-link user-navigation-ico cart_count">2</span>
-        <img class="user-navigation-link user-navigation-ico" src="img\cart.svg" alt="Корзина">
+        <img class="user-navigation-link user-navigation-ico cart-counter-ico" src="img\cart_count.svg" alt="Кол-во заказов в корзине">
+        <span class="user-navigation-link user-navigation-ico cart-count">2</span>
+        <img class="user-navigation-link user-navigation-ico cart-ico" src="img\cart.svg" alt="Корзина">
         <a class="user-navigation-link cart" href="#">Корзина</a>
       </li>
     </ul>
@@ -52,17 +54,122 @@
         <a class="main-navigation-link" href="#">Контакты</a>
       </li>
     </ul>
+    <div class="main-navigation-background"></div>
   </nav>
+
+  <aside class="product-preview">
+
+    <article class="product-preview-constructor">
+      <img class="product-preview-img" src="img/quadrocopter_with_laser.png">
+      <p class="product-preview-index">01</p>
+      <b class="product-preview-header">Порхает как бабочка,<br>жалит как пчела!</b>
+      <p class="product-preview-content">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+      <a class="product-preview-more" href="#">Подробнее</a>
+      <div class="product-preview-row">
+        <div class="product-preview-column">
+          <p class="product-preview-content">800 м</p>
+          <p class="product-preview-content-label">Дальность полета</p>
+        </div>
+        <div class="product-preview-column">
+          <p class="product-preview-content">50 м</p>
+          <p class="product-preview-content-label">Радиус поражения</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- В зависимости от будущих планов по механизму переключения "крошек" этот блок требует адаптации -->
+    <nav class="product-preview-breadcrumbs">
+      <a class="product-preview-breadcrumbs-link current" href="#">Рекомендуемые товары
+        <img class="product-preview-breadcrumbs-img" src="img\breadcrumbs_current.svg" alt="текущий товар">
+      </a>
+      <a class="product-preview-breadcrumbs-link" href="#">Рекомендуемые товары
+        <img class="product-preview-breadcrumbs-img" src="img\breadcrumbs_default.svg" alt="другой товар">
+      </a>
+      <a class="product-preview-breadcrumbs-link" href="#">Рекомендуемые товары
+        <img class="product-preview-breadcrumbs-img" src="img\breadcrumbs_default.svg" alt="другой товар">
+      </a>
+      <a class="product-preview-breadcrumbs-link" href="#">
+        <img class="product-preview-navigation left-arrow" src="img/left_arrow_product_preview.svg" alt="листать влево">
+      </a>
+      <a class="product-preview-breadcrumbs-link" href="#">
+        <img class="product-preview-navigation right-arrow" src="img/right_arrow_product_preview.svg" alt="листать вправо">
+      </a>
+    </nav>
+    <!-- Конец блока с breacrumbs -->
+
+  </aside>
 </header>
 
-<main>
-
+<main class="site-main">
+  <nav class="site-main product-catalog"></nav>
+  <section class="site-main list-benefits"></section>
+  <section class="site-main row-additional-offers"></section>
 </main>
 
-<footer>
-  <hr>
-  <p>Репозиторий создан для обучения на профессиональном онлайн-курсе «<a
-      href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<footer class="site-footer">
+  <section class="site-footer container about-us">
+    <hr>
+    <h2>О нас</h2>
+  </section>
+
+  <section class="site-footer container contacts">
+    <hr>
+    <h2>Контакты</h2>
+  </section>
+
+  <section class="site-footer-subscription"></section>
+
+  <nav class="site-footer-nav">
+
+    <section class="site-footer-nav-wrapper site-footer-nav-left-wrapper">
+      <img class="site-footer-logo" src="img\logo.svg" alt="Логотип Device">
+      <a class="site-footer-nav-link adress" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
+      <img class="site-footer-rectangle" src="" alt="-">
+    </section>
+
+    <section class="site-footer-nav-wrapper site-footer-nav-center-wrapper">
+      <ul class="site-footer-nav-list ">
+        <li class="site-footer-nav-item">
+          <a class="site-footer-nav-link" href="#">Доставка</a>
+        </li>
+        <li class="site-footer-nav-item">
+          <a class="site-footer-nav-link" href="#">Гарантия</a>
+        </li>
+        <li class="site-footer-nav-item">
+          <a class="site-footer-nav-link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="site-footer-nav-list social">
+        <li class="site-footer-nav-item">
+          <a class="site-footer-nav-link" href="#">
+            Доставка
+          <img class="site-footer-nav-img" src="img/facebook.svg" alt="Facebook">
+        </a>
+        </li>
+        <li class="site-footer-nav-item">
+          <a class="site-footer-nav-link" href="#">
+            Гарантия
+          <img class="site-footer-nav-img" src="img/instagram.svg" alt="Instagram">
+        </a>
+        </li>
+        <li class="site-footer-nav-item">
+          <a class="site-footer-nav-link" href="#">
+            Контакты
+          <img class="site-footer-nav-img" src="img/twitter.svg" alt="Twitter">
+        </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="site-footer-nav-wrapper site-footer-nav-right-wrapper">
+      <a class="site-footer-nav-telephone" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
+      <a class="site-footer-nav-link" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/html_academy.svg" width="50" height="50" alt="HTML Academy">
+      </a>
+    </section>
+
+  </nav>
+
 </footer>
 
 </body>
