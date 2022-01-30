@@ -16,7 +16,7 @@
     <h1 class="user-navigation-title visually-hidden">Магазин гаджетов - Device</h1>
     <form class="user-navigation search-form" action="https://echo.htmlacademy.ru/" method="POST">
       <div class="user-navigation search-item">
-        <img class="user-navigation search-item seacrh-ico" alt="Поиск">
+        <img class="user-navigation-search-item" src="images/search" alt="Поиск">
         <input class="user-navigation search-item seacrh-input" type="search" placeholder="Текст поиска">
       </div>
       <input class="user-navigation search-item submit-item" type="submit" value="Найти">
@@ -58,10 +58,12 @@
     <div class="main-navigation-background"></div>
   </nav>
 
+  <!-- Aside не подходит. Заменить на другой раздел -->
   <aside class="product-preview">
-
+    <h2 class="product-preview-title visually-hidden">Рекомендуемый товар</h2>
     <article class="product-preview-constructor">
-      <img class="product-preview-img" src="images/quadrocopter_with_laser.png">
+      <h3 class="product-preview-heading visually-hidden">Квадракоптер с лазером</h3>
+      <img class="product-preview-img" src="images/quadrocopter_with_laser.png" alt="Квадракоптер с лазером">
       <p class="product-preview-index">01</p>
       <b class="product-preview-slogan">Порхает как бабочка,<br>жалит как пчела!</b>
       <p class="product-preview-lead">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -148,35 +150,38 @@
   <section class="site-main-benefits">
     <ul class="site-main-benefits-list">
       <li class="site-main-benefits-item">
-        <h2 class="site-main-benefits-title visually-hidden">Доставка</h3>
-        <input class="site-main-benefits-button" type=button value="Доставка" action="">
+        <h2 class="site-main-benefits-title visually-hidden">Доставка</h2>
+        <input class="site-main-benefits-button" type="button" value="Доставка">
       </li>
       <li class="site-main-benefits-item">
-        <h2 class="site-main-benefits-title visually-hidden">Гарантия</h3>
-        <input class="site-main-benefits-button" type=button value="Гарантия" action="">
+        <h2 class="site-main-benefits-title visually-hidden">Гарантия</h2>
+        <input class="site-main-benefits-button" type=button value="Гарантия">
       </li>
       <li class="site-main-benefits-item">
-        <h2 class="site-main-benefits-title visually-hidden">Кредит</h3>
-        <input class="site-main-benefits-button" type=button value="Кредит" action="">
+        <h2 class="site-main-benefits-title visually-hidden">Кредит</h2>
+        <input class="site-main-benefits-button" type=button value="Кредит">
       </li>
     </ul>
     <div class="site-main-benefits-constructor">
       <b class="site-main-benefits-title">Доставка</b>
-      <p class="site-main-benefits-content">Мы с удовольствием доставим ваш товар прямо
-        к вашему подъезду совершенно бесплатно! Ведь
-        мы неплохо заработаем, поднимая его на ваш этаж./p>
+      <p class="site-main-benefits-content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж./p>
       </div>
   </section>
 
-  <section class="site-main-add-offers"></section>
+  <section class="site-main-add-offers">
+    <h2 class="site-main-add-offers-title visually-hidden">Доставим редкий товар под заказ</h2>
+    <img class="site-main-add-offers-image" src="images/track.svg" alt="Доставка ценных грузов">
+    <p class="site-main-add-offers-content">Доставим редкий товар под заказ</p>
+    <img class="site-main-add-offers-more" src="images/more.svg" alt="Узнать подробнее">
+  </section>
 </main>
 
 
 <footer class="site-footer">
   <h2 class="site-footer-about-title visually-hidden">Контакты</h2>
   <section class="site-footer-about">
-    <hr class="site-footer-about">
-    <h3 class="site-footer-about-title">О нас</h2>
+    <hr class="site-footer-about-rectangle">
+    <h3 class="site-footer-about-title">О нас</h3>
     <p class="site-footer-about-content">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
     <p class="site-footer-about-content">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
     <ul class="site-footer-about-list">
@@ -188,7 +193,7 @@
   </section>
 
   <section class="site-footer-contacts">
-    <hr class="site-footer-contacts">
+    <hr class="site-footer-contacts-rectangle">
     <b class="site-footer-contacts-title">Контакты</b>
     <b class="site-footer-contacts-subtitle">Интернет-магазин «Девайс»</b>
     <p class="site-footer-contacts-content">Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить работоспособность покупки.</p>
@@ -200,8 +205,7 @@
 
   <section class="site-footer-subscription">
     <h2 class="site-footer-subscription-title">Подпишитесь на рассылку</h2>
-    <p class="site-footer-subscription-subtitle">Еженедельный дайджест с обзорами новинок,
-      длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+    <p class="site-footer-subscription-subtitle">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
     <form class="site-footer-subscription-form">
       <input class="site-footer-subscription-input" type="email" placeholder="Ваш e-mail">
@@ -209,7 +213,7 @@
     </form>
 
     <div class="site-footer-subscription-advantage">
-      <img src="img/checked.svg">
+      <img src="image/checked.svg" alt="">
       <p>Это бесплатно</p>
     </div>
   </section>
@@ -217,9 +221,9 @@
   <nav class="site-footer-nav">
 
     <section class="site-footer-nav-wrapper site-footer-nav-left-wrapper">
-      <img class="site-footer-logo" src="img\logo.svg" alt="Логотип Device">
-      <a class="site-footer-nav-link adress" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
-      <img class="site-footer-rectangle" src="" alt="-">
+      <img class="site-footer-logo" src="image/logo.svg" alt="Логотип Device">
+      <a class="site-footer-nav-link address" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
+      <hr class="site-footer-nav-rectangle">
     </section>
 
     <section class="site-footer-nav-wrapper site-footer-nav-center-wrapper">
