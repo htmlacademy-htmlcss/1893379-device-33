@@ -87,38 +87,34 @@
   </nav>
 
 
-  <form class="product-preview" oninput=' console.log(event.target); output[event.target.id].style.visibility = "hidden"; // event.target.id //.style.visibility = "hidden" '>
+  <form class="product-preview" oninput="daysoutput.value=quadrocopter_with_laser.value">
 
     <h2 class="product-preview-title visually-hidden">Рекомендуемый товар</h2>
 
     <!-- Radio-кнопками перечисляю в форме все товары -->
-    <input class="radio" type="radio" id="0" name="input"/>
-    <input class="radio" type="radio" id="1" name="input"/>
-    <input class="radio" type="radio" id="2" name="input"/>
+    <input class="radio" type="radio" id="1" name="quadrocopter_with_laser"/>
+    <input class="radio" type="radio" id="2" name="quadrocopter_with_laser2" />
+    <input class="radio" type="radio" id="3" name="quadrocopter_with_laser3" />
+    <label for="radio">Квадракоптер с лазером</label>
 
-    <output class="product-preview-constructor" name="output">
-      <h3 class="product-preview-heading visually-hidden">Квадракоптер с лазером</h3>
-      <img class="product-preview-img" src="images/_quadrocopter_with_laser.png" alt="Квадракоптер с лазером">
-      <p class="product-preview-index">01</p>
-      <b class="product-preview-slogan">Порхает как бабочка,<br>жалит как пчела!</b>
-      <p class="product-preview-lead">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-      <a class="product-preview-more" href="#">Подробнее</a>
-      <div class="product-preview-row">
-        <div class="product-preview-column">
-          <p class="product-preview-content">800 м</p>
-          <p class="product-preview-content-label">Дальность полета</p>
-        </div>
-        <div class="product-preview-column">
-          <p class="product-preview-content">50 м</p>
-          <p class="product-preview-content-label">Радиус поражения</p>
-        </div>
+    <output name="daysoutput">Квадракоптер с лазером</output>
+
+    <h3 class="product-preview-heading visually-hidden">Квадракоптер с лазером</h3>
+    <img class="product-preview-img" src="images/_quadrocopter_with_laser.png" alt="Квадракоптер с лазером">
+    <p class="product-preview-index">01</p>
+    <b class="product-preview-slogan">Порхает как бабочка,<br>жалит как пчела!</b>
+    <p class="product-preview-lead">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+    <a class="product-preview-more" href="#">Подробнее</a>
+    <div class="product-preview-row">
+      <div class="product-preview-column">
+        <p class="product-preview-content">800 м</p>
+        <p class="product-preview-content-label">Дальность полета</p>
       </div>
-    </output>
-
-    <output name="output"></output>
-
-    <output name="output"></output>
-
+      <div class="product-preview-column">
+        <p class="product-preview-content">50 м</p>
+        <p class="product-preview-content-label">Радиус поражения</p>
+      </div>
+    </div>
   </form>
   <!-- Добавляю функцию переключения товаров через отдельные баттоны-стрелки output -->
   <nav class="product-preview-breadcrumbs">
