@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <header class="site-header">
+  <header class="header">
     <img class="logo" src="" alt="">
     <form class="user-navigation search-form" action="https://echo.htmlacademy.ru" method="GET">
       <label class="visually-hidden" for="search">Поле для поиска.</label>
@@ -60,42 +60,62 @@
     </nav>
   </header>
 
+  <main class="main">
+    <section class="subscription">
+      <p class="subscription-title">
+        Подпишитесь на рассылку
+      </p>
+      <p class="subscription-subtitle">
+        Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
+        спецпредложения и вот это вот всё.
+      </p>
+      <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="subscription-email">
+          Email
+        </label>
+        <input class="field" type="email" placeholder="Ваш e-mail" id="subscription-email" name="subscription-email"
+          required>
+        <button class="button subscription-button" type="submit">Подписаться</button>
+      </form>
+    </section>
+  </main>
+
   <footer>
-    <img class="site-footer-logo" src="" alt="">
-    <p class="site-footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+    <img class="footer-logo" src="" alt="">
+    <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
 
-    <ul class="site-footer-nav-list">
-      <li class="site-footer-nav-item">
-        <a class="site-footer-nav-link" href="#">Доставка</a>
+    <ul class="footer-nav-list">
+      <li class="footer-nav-item">
+        <a class="footer-nav-link" href="#">Доставка</a>
       </li>
-      <li class="site-footer-nav-item">
-        <a class="site-footer-nav-link" href="#">Гарантия</a>
+      <li class="footer-nav-item">
+        <a class="footer-nav-link" href="#">Гарантия</a>
       </li>
-      <li class="site-footer-nav-item">
-        <a class="site-footer-nav-link" href="#">Контакты</a>
+      <li class="footer-nav-item">
+        <a class="footer-nav-link" href="#">Контакты</a>
       </li>
     </ul>
-    <ul class="site-footer-social-list">
-      <li class="site-footer-nav-item">
-        <a class="site-footer-nav-link" href="https://www.facebook.com/htmlacademy">
-          <img class="site-footer-nav-img" src="" alt="">
+    <ul class="footer-social-list">
+      <li class="footer-nav-item">
+        <a class="footer-nav-link" href="https://www.facebook.com/htmlacademy">
+          <img class="footer-nav-img" src="" alt="">
         </a>
       </li>
-      <li class="site-footer-nav-item">
-        <a class="site-footer-nav-link" href="https://www.instagram.com/htmlacademy/">
-          <img class="site-footer-nav-img" src="" alt="">
+      <li class="footer-nav-item">
+        <a class="footer-nav-link" href="https://www.instagram.com/htmlacademy/">
+          <img class="footer-nav-img" src="" alt="">
         </a>
       </li>
-      <li class="site-footer-nav-item">
-        <a class="site-footer-nav-link" href="https://twitter.com/htmlacademy_ru">
-          <img class="site-footer-nav-img" src="" alt="">
+      <li class="footer-nav-item">
+        <a class="footer-nav-link" href="https://twitter.com/htmlacademy_ru">
+          <img class="footer-nav-img" src="" alt="">
         </a>
       </li>
     </ul>
 
-    <a class="site-footer-nav-telephone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-    <a class="site-footer-nav-link" href="https://htmlacademy.ru/">
-      <img class="site-footer-logo" src="" width="50" height="50" alt="">
+    <a class="footer-nav-telephone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+    <a class="footer-nav-link" href="https://htmlacademy.ru/">
+      <img class="footer-logo" src="" width="50" height="50" alt="">
     </a>
   </footer>
 </body>
