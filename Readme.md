@@ -34,10 +34,14 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 Программа клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
 
-#### 4. Начинайте обучение!
+#### 4. Макет проекта в Figma
+[«Девайс»](https://www.figma.com/file/f8ZtnZcdWC2pSklG1ssm9K/HTML-1-%2F-%D0%94%D0%B5%D0%B2%D0%B0%D0%B9%D1%81?node-id=11534%3A6989)
+#### 5. Начинайте обучение!
 
 ---
 
-<a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png"></a>
+<a href="https://www.figma.com/file/f8ZtnZcdWC2pSklG1ssm9K/HTML-1-%2F-%D0%94%D0%B5%D0%B2%D0%B0%D0%B9%D1%81?node-id=11534%3A6989"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png"></a>
+
+<a href="https://htmlacademy.ru/intensive/htmlcss"></a>
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Профессиональная вёрстка сайтов](https://htmlacademy.ru/intensive/htmlcss)» от [HTML Academy](https://htmlacademy.ru).
