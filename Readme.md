@@ -35,7 +35,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 Программа клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
 
 #### 4. Начинайте обучение!
-
+[Макет](https://www.figma.com/file/f8ZtnZcdWC2pSklG1ssm9K/HTML-1-%2F-%D0%94%D0%B5%D0%B2%D0%B0%D0%B9%D1%810)
 ---
 
 <a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png"></a>
